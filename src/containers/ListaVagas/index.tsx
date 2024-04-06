@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import FormVagas from '../../components/FormVagas'
+import { FormVagas } from '../../components/FormVagas'
 
 import Vaga from '../../components/Vaga'
 
@@ -89,7 +89,7 @@ const vagas = [
   }
 ]
 
-const ListaVagas = () => {
+export const ListaVagas = () => {
   const [filtro, setFiltro] = useState<string>('')
 
   const vagasFiltradas = vagas.filter(
@@ -116,5 +116,3 @@ const ListaVagas = () => {
     </div>
   )
 }
-
-export default ListaVagas
